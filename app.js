@@ -13,7 +13,7 @@ app.get('/', (re,res) =>{
     res.send("Test")
 })
 
-app.get('access_token', (req,res) =>{
+app.get('/daraja_token', (req,res) =>{
     // access token 
     consumer_key = process.env.YOUR_APP_CONSUMER_KEY,
     consumer_secret = process.env.YOUR_APP_CONSUMER_SECRET,
