@@ -1,0 +1,32 @@
+{
+  "name": "conduit",
+  "version": "1.0.0",
+  "description": "A simple node project to consume daraja API",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pmutua/conduit.git"
+  },
+  "keywords": [
+    "mpesa",
+    "safaricom",
+    "daraja",
+    "api"
+  ],
+  "author": "philip mutua",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pmutua/conduit/issues"
+  },
+  "homepage": "https://github.com/pmutua/conduit#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.0",
+    "nodemon": "^2.0.4",
+    "request": "^2.88.2"
+  }
+}
