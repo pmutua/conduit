@@ -9,12 +9,18 @@ require('dotenv').config()
 
 
 //routes 
-app.get('/', (re,res) =>{
+app.get('/', (req,res) =>{
     res.send("Test")
 })
 
-app.get('/daraja_token', (req,res) =>{
+app.get('/daraja_token', get_daraja_access_token,  (req,res) =>{
     // access token 
+    res.status(200).json({access_token: req.access_token})
+
+})
+
+
+function get_daraja_access_token(req,res,next){
     consumer_key = process.env.YOUR_APP_CONSUMER_KEY,
     consumer_secret = process.env.YOUR_APP_CONSUMER_SECRET,
     url = "https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials"
@@ -32,14 +38,13 @@ app.get('/daraja_token', (req,res) =>{
         if (error){
             console.log(error)
         }else{
-            res.status(200).json(body)
+            req.access_token = JSON.parse(body).access_token
+            next()
         }
       }
     )
-})
 
-
-
+} 
 
 
 
