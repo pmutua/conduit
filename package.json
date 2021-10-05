@@ -1,8 +1,7 @@
 {
   "name": "conduit",
   "version": "1.0.0",
-  "description": "A simple node project to consume daraja API",
-  "main": "index.js",
+  "description": "A REST API that consume's daraja API",
   "scripts": {
     "start": "nodemon app.js"
   },
@@ -24,10 +23,21 @@
   "homepage": "https://github.com/pmutua/conduit#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "mongoose": "^5.10.0",
+    "morgan": "^1.10.0",
     "nodemon": "^2.0.4",
-    "request": "^2.88.2"
+    "request": "^2.88.2",
+    "swagger-jsdoc": "^6.1.0",
+    "swagger-ui-express": "^4.1.6"
+  },
+  "devDependencies": {},
+  "main": "app.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
   }
 }
