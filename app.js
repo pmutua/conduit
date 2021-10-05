@@ -101,8 +101,8 @@ app.get('/balance', mpesaAuth,(req,res)=>{
         "PartyA": 600996,
         "IdentifierType": "4",
         "Remarks": "balance",
-        "QueueTimeOutURL": "http://192.168.0.102:3000/AccountBalance/queue/",
-        "ResultURL": "http://192.168.0.102:3000/AccountBalance/result/",
+        "QueueTimeOutURL": "http://localhost:3000/AccountBalance/queue/",
+        "ResultURL": "http://localhost:3000/AccountBalance/result/",
       }
     },
     function(error,response,body){
