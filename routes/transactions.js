@@ -1,5 +1,4 @@
 const router = require('express').Router()
-const request = require('request')
 
 const Transaction = require('../models/transaction.model');
 
@@ -14,7 +13,7 @@ router.route('/add').post((req,res)=>{
     const newTransaction = new Transaction(transaction);
 
     newTransaction.save()
-    .then(()=> res.json('User added!'))
+    .then(()=> res.json('Transaction added!'))
     .catch(err=> res.status(400).json('Error: '+ err));
 });
 
