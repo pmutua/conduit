@@ -1,0 +1,13 @@
+module.exports = {
+    openapi: "3.0.3",
+    info: {
+        title: "Conduit API",
+        description: "Conduit API",
+        version: "1.0.0",
+        contact: {
+            name: "Philip Mutua",
+            email: "pmutua@live.com",
+            url: "https://conduit-gateway.herokuapp.com/",
+        },
+    },
+};
