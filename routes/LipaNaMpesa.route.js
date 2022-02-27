@@ -4,9 +4,6 @@ const LipaNaMpesaTransaction = require('../models/LipaNaMpesaTransaction.model')
 const mpesaAuth = require('../middlewares/mpesaAuth.middleware');
 
 
-
-
-
 router.route('/').get((req, res) => {
   LipaNaMpesaTransaction.find()
     .then(transactions => res.json(transactions))
