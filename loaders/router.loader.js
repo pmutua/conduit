@@ -1,9 +1,7 @@
 const express = require("express");
-// var indexRouter = require("../routes/index");
-// var router1Router = require("../routes/router1");
-var transactionsRouter = require("../routes/transactions");
-var c2bRouter = require("../routes/c2b.routes");
-var lipaNaMpesaRouter = require("../routes/LipaNaMpesa.route");
+const transactionsRouter = require("../routes/transactions");
+const c2bRouter = require("../routes/c2b.routes");
+const lipaNaMpesaRouter = require("../routes/LipaNaMpesa.route");
 
 module.exports = function(app) {
   app.use(express.json());
