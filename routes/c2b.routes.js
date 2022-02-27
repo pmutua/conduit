@@ -42,4 +42,17 @@ router.route('/register').get(mpesaAuth, (req, res) => {
 });
 
 
+router.route('/confirmation').post((req,res)=>{
+    console.log("-----------Confirmation--------------")
+    const mpesa_response = req.body;
+    console.log(mpesa_response)
+});
+
+router.route('/validation').post((req,res)=>{
+  console.log("-----------Confirmation--------------")
+  const mpesa_response = req.body;
+  console.log(mpesa_response)
+});
+
+
 module.exports = router;
