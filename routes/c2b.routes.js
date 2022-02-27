@@ -4,7 +4,7 @@ const C2b = require('../models/c2B.model');
 const mpesaAuth = require('../middlewares/mpesaAuth.middleware');
 
 
-router.route('/').get((req, res) => {
+router.route('/initiate').get((req, res) => {
   C2b.find()
     .then(transactions => res.json(transactions))
     .catch(err => res.status(400).json('Error: ' + err));
